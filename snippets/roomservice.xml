@@ -9,7 +9,6 @@
   </project>
   
   #############################################################################| Manin |#####################################################################
-  <remove-project name="android_build" />
   <project name="KillerDroid96/android_build"                                  path="build"                             remote="github" revision="OMS" />
 
   <remove-project name="LineageOS/android_bootable_recovery" />
