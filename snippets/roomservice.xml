@@ -109,6 +109,9 @@
   <delete-project  name="LineageOS/android_packages_apps_CMFileManager" />
   <delete-project  name="LineageOS/android_packages_apps_CMWallpapers" />
   <delete-project  name="LineageOS/android_packages_apps_Trebuchet" />
+  <delete-project  name="platform_manifest" />
+  <delete-project  name="system_core" />
+
 a#############################################################################################################################################################
 
 </manifest>
