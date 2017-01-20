@@ -36,7 +36,6 @@
 
   <project name="LineageOS/android_packages_resources_devicesettings"          path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
 
-  <remove-project name="android_system_core" />
   <project name="KillerDroid96/android_system_core"                            path="system/core"                       remote="github" revision="OMS" />
   
   <remove-project name="LineageOS/android_system_media" />
