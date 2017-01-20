@@ -81,12 +81,12 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
 
 ##### Initializing the RR repo and downloading the manifest
 
-      $  repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
+        repo init -u https://github.com/KillerDroid96/platform_manifest.git -b OMS
 
 ##### Syncing the source
 [Hint: This might take a long time as the source is ~20GB]
 
-      $  repo sync -f --force-sync --no-clone-bundle
+       repo sync -f --force-sync --no-clone-bundle
 
 ###Building the Resurrection Remix ROM
 - Preparing Required Binaries and Device Drivers
@@ -112,8 +112,8 @@ The number before the letter G at the end specifies the amount of space CCache c
 
 ##### To build Resurrection Remix ROM
 
-      $ cd ~/RR
-      $ . build/envsetup.sh && brunch <device>
+       cd ~/RR
+       . build/envsetup.sh && brunch <device>
 
 ##### Obtaining the zip created from the build process
 To get the zip file that has been built, navigate to the following directory and find for the zip file:
