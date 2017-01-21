@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="flash-gl"
-            revision="n7.1.1"
-            fetch="https://gitlab.com/Flash-ROM/" />
-  
+    
   <project name="KillerDroid96/OTA" path="OTA" remote="github" revision="master" >
       <copyfile src="ota_conf" dest="ota_conf" />
   </project>
   
   #############################################################################| Manin |#####################################################################
+  <remove-project name="android_build" />
   <project name="KillerDroid96/android_build"                                  path="build"                             remote="github" revision="OMS" />
 
-  <remove-project name="LineageOS/android_bootable_recovery" />
-  <project name="KillerDroid96/android_bootable_recovery"                      path="bootable/recovery"                 remote="github" revision="OMS" />
-
-  <project name="LineageOS/android_external_stlport"                           path="external/stlport"                  remote="github" revision="cm-14.1" />
+    <project name="LineageOS/android_external_stlport"                         path="external/stlport"                  remote="github" revision="cm-14.1" />
 
   <remove-project name="external_DUtils" />
   <project name="KillerDroid96/external_DUtils"                                path="external/DUtils"                   remote="github" revision="OMS" />
@@ -34,7 +29,8 @@
   <project name="KillerDroid96/android_packages_providers_MediaProvider"       path="packages/providers/MediaProvider"  remote="github" revision="OMS" />
 
   <project name="LineageOS/android_packages_resources_devicesettings"          path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
-
+  
+  <remove-project path="system/core" name="system_core" remote="rr" />
   <project name="KillerDroid96/android_system_core"                            path="system/core"                       remote="github" revision="OMS" />
   
   <remove-project name="LineageOS/android_system_media" />
@@ -50,9 +46,7 @@
   <project name="KillerDroid96/android_vendor_resurrection"                    path="vendor/cm"                         remote="github" revision="OMS" />
 
   ###########################################################################| Apps |#####################################################################
-  <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
-  <project name="KillerDroid96/android_packages_apps_CMUpdater"                path="packages/apps/CMUpdater"           remote="github" revision="OMS" />
-
+ 
   <remove-project name="android_packages_apps_CMParts" />
   <project name="KillerDroid96/android_packages_apps_CMParts"                  path="packages/apps/CMParts"             remote="github" revision="OMS" />
  
@@ -82,8 +76,8 @@
   <remove-project name="Resurrection_packages_apps_Settings" />
   <project name="KillerDroid96/Resurrection_packages_apps_Settings"            path="packages/apps/Settings"            remote="github" revision="OMS" />
 ####################################################################| Nexus6P |#############################################################################
-  <project name="Flash-Rom/kernel_huawei_angler"                      path="kernel/huawei/angler"               remote="github" revision="n7.1.1"  />
   <project name="KillerDroid96/android_device_huawei_angler"          path="device/huawei/angler"               remote="github" revision="OMS" />
+  <project name="KillerDroid96/kernel_huawei_angler"                  path="kernel/huawei/angler"               remote="github" revision="OMS"  />
   <project name="LineageOS/android_device_qcom_common"                path="device/qcom/common"                 remote="github" revision="cm-14.1" />
   <project name="TheMuppets/proprietary_vendor_huawei"                path="vendor/huawei/angler"               remote="github" revision="cm-14.1" />
 ####################################################################| GalaxyS4 |############################################################################
@@ -100,18 +94,15 @@
   <project name="KillerDroid96/vendor_addons"                         path="vendor/addons"                      remote="github" revision="OMS" />
   <project name="BenzoRoms/external_busybox"                          path="exteranl/busybox"                   remote="github" revision="noneone" />
 ####################################################################| Flash-ROM |##############################################################################
-  <project name="aarch64-linux-android-6.x" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x"  remote="flash-gl" />
-  <project name="arm-linux-androideabi-6.x" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x"      remote="flash-gl" />
-  <project name="clang_linux-x86_3.9.1"     path="prebuilts/clang/host/linux-x86/3.9.1"                       remote="flash-gl" />
-  <project name="clang_linux-x86_4.0.0"     path="prebuilts/clang/host/linux-x86/4.0.0"                       remote="flash-gl" />
+  <project name="aarch64-linux-android-6.x"   path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x"  remote="flash-gl" />
+  <project name="arm-linux-androideabi-6.x"   path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x"      remote="flash-gl" />
+  <project name="clang_linux-x86_3.9.1"       path="prebuilts/clang/host/linux-x86/3.9.1"                       remote="flash-gl" />
+  <project name="clang_linux-x86_4.0.0"       path="prebuilts/clang/host/linux-x86/4.0.0"                       remote="flash-gl" />
 ####################################################################| Removed |#############################################################################
   <delete-project  name="LineageOS/android_packages_apps_Browser" />
   <delete-project  name="LineageOS/android_packages_apps_CMFileManager" />
   <delete-project  name="LineageOS/android_packages_apps_CMWallpapers" />
   <delete-project  name="LineageOS/android_packages_apps_Trebuchet" />
-  <delete-project  name="platform_manifest" />
-  <delete-project  name="system_core" />
-
-a#############################################################################################################################################################
+#############################################################################################################################################################
 
 </manifest>
